@@ -46,7 +46,7 @@ public class OngkirActivity extends AppCompatActivity {
         tv_kotaAsal.setText(NamaKotaAsal);
         tv_kotaTujuan.setText(NamaKotaTujuan);
         tv_kurir.setText(kurir);
-        tv_berat.setText(berat);
+        tv_berat.setText(berat + " gram");
 
         new OngkirService().getHargaAPI(hargaListener,idKotaAsal,idKotaTujuan, Integer.parseInt(berat),kurir);
 
